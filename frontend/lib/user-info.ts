@@ -1,6 +1,6 @@
 "use client";
 
-import { getCookie, setCookie } from "cookies-next";
+import { deleteCookie, getCookie, setCookie } from "cookies-next";
 import type { UserLogin } from "@/payload-types";
 
 export function setUser(userData: UserLogin) {
@@ -14,4 +14,8 @@ export function setUser(userData: UserLogin) {
 export function getUser() {
   const user = getCookie("user");
   return user ?? undefined;
+}
+
+export function removeUser() {
+  deleteCookie("user");
 }

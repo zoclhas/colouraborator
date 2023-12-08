@@ -19,7 +19,7 @@ export default function Login({
   const success = searchParams.success;
 
   return (
-    <main className="min-h-[calc(100vh-80px)] px-4 flex items-center justify-center">
+    <main className="min-h-[calc(100vh-60px)] px-4 flex items-center justify-center">
       <div className="flex flex-col gap-2">
         {message && (
           <Alert className="sm:min-w-[370px] mb-2">
